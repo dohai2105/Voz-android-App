@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/threadContainer"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" />
+
+        <View
+            android:id="@+id/splitView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/quickPage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/f17QuickTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="F17"
+                android:textColor="#0000ff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/f33QuickTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="F33"
+                android:textColor="#0000ff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/f47QuickTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="F47"
+                android:textColor="#0000ff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/f31QuickTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="F31"
+                android:textColor="#0000ff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newThreadContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:visibility="gone" >
+        <include layout="@layout/newpost_layout"/>
+    </LinearLayout>
+
+</LinearLayout>

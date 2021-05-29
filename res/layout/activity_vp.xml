@@ -1,0 +1,142 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpagerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/pageContainer"
+                android:background="#000" />
+
+            <include layout="@layout/footer_indicator" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/commentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/commentContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/commentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:hint="Write a comment"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="#000"
+                    android:textCursorDrawable="@drawable/cursor_bg"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iconContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <GridView
+                    android:id="@+id/iconGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Quay lại"
+                    android:textColor="#000" />
+
+                <Button
+                    android:id="@+id/iconSelect"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Icon"
+                    android:textColor="#000" />
+
+                <Button
+                    android:id="@+id/upImgSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Up ảnh"
+                    android:textColor="#000" />
+
+                <Button
+                    android:id="@+id/postSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Gửi"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_menu_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#4DFFFFFF" >
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:choiceMode="singleChoice"
+            android:divider="#000000"
+            android:dividerHeight="1px" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#000"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

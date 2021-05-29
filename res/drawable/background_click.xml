@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_bg_noclick" android:state_pressed="false"></item>
+    <item android:drawable="@drawable/shape_bg_click" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/shape_bg_click" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/shape_bg_click" android:state_active="true"></item>
+    <item android:drawable="@drawable/shape_bg_click" android:state_activated="true"></item>
+    <item android:drawable="@drawable/shape_bg_click" android:state_selected="true"></item>
+    <item android:drawable="@drawable/shape_bg_click" android:state_focused="true"></item>
+
+</selector>

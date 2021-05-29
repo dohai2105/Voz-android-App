@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/commentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/inboxWebView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/responseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trả lời" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commentContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:hint="Title"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/cursor_bg"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/splitView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000" />
+
+        <EditText
+            android:id="@+id/commentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:hint="Message..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColor="#000"
+            android:textCursorDrawable="@drawable/cursor_bg"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iconContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/iconGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Quay lại" />
+
+        <Button
+            android:id="@+id/iconSelect"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Icon" />
+
+        <Button
+            android:id="@+id/upImgSubmit"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Up ảnh" />
+
+        <Button
+            android:id="@+id/postSubmit"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Gửi" />
+    </LinearLayout>
+
+</LinearLayout>

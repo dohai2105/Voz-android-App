@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/shape_groupitem"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="titleTv"
+        android:textColor="#000"
+        android:textSize="15.8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleTv"
+        android:layout_below="@+id/titleTv"
+        android:text="subTitleTv" />
+
+    <TextView
+        android:id="@+id/userTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subTitleTv"
+        android:layout_below="@+id/subTitleTv"
+        android:text="user"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/replyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userTv"
+        android:layout_below="@+id/userTv"
+        android:text="reply" />
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/replyTv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="time"
+        android:textStyle="italic" />
+
+</RelativeLayout>

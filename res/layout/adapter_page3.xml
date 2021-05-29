@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_groupitem"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1E4F2" />
+
+    <RelativeLayout
+        android:id="@+id/TopContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1E4F2"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/numberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="numberTv"
+            android:textColor="#FF3300" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/numberTv"
+            android:text="time" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1E4F2"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/avartaImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/typeTv"
+            android:layout_toRightOf="@+id/avartaImg"
+            android:text="nameTv"
+            android:textColor="#23497C"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/typeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/avartaImg"
+            android:layout_toRightOf="@+id/avartaImg"
+            android:text="typeTv" />
+
+        <TextView
+            android:id="@+id/postTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="5dp"
+            android:text="postTv" />
+        
+         <TextView
+            android:id="@+id/joindateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_below="@+id/postTv"
+        	android:layout_alignLeft="@+id/postTv"
+            android:text="joindateTv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:padding="5dp" >
+
+        <WebView
+            android:id="@+id/detailContainer"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+        </WebView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="7dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/quoteTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/quote"
+            android:textColor="#23497C"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mutilquoteTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Multi-quote"
+            android:textColor="#23497C"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Edit"
+            android:textColor="#23497C"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

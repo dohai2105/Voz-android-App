@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <za.co.immedia.pinnedheaderlistview.PinnedHeaderListView
+        android:id="@+id/pinnedListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/splitView"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+    </za.co.immedia.pinnedheaderlistview.PinnedHeaderListView>
+
+    <View
+        android:id="@+id/splitView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/quickPage"
+        android:background="#000" />
+
+    <LinearLayout
+        android:id="@+id/quickPage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/f17QuickTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="F17"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/f33QuickTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="F33"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/f47QuickTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="F47"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/f31QuickTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="F31"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
