@@ -7,7 +7,7 @@ so I had to use Jsoup library to craw data from website forum and show it on and
 <br/>
 At that time, i just want another people to use my app and I created it just for fun<br/>
 <br/>
-https://o.voz.vn/showthread.php?t=4051151<br/>
+https://o.voz.vn/showthread.php?t=3966363<br/>
 <br/>
 Image:<br/>
 
