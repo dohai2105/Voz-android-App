@@ -1,7 +1,7 @@
 # Voz-android-App
 
 Voz is one of the most popular IT forum in VietNam.<br/>
-I wrote this app in 2015 when I was a university student.<br/>
+I wrote this app in 2015 when I was a student.<br/>
 This forum did not support API for third party application <br/>
 so I had to use Jsoup library to craw data from website forum and show it on android device.<br/>
 <br/>
