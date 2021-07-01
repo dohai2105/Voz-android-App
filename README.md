@@ -5,7 +5,8 @@ I wrote this app in 2015 when I was a student.<br/>
 This forum did not support API for third party application <br/>
 so I had to use Jsoup library to craw data from website forum and show it on android device.<br/>
 <br/>
-I had supported a lot of member who used my app for almost two years<br/>
+
+It got around 40 thousand downloads and I have mantained this project for about two years<br/>
 <br/>
 https://o.voz.vn/showthread.php?t=3966363<br/>
 <br/>
